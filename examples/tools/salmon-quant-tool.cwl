@@ -44,8 +44,6 @@ outputs:
         ${
           var io=inputs.output
           io=io.replace(" /g","_")
-          echo self[0]
-          echo self
           self.basename = io + '_quant.sf';
           return self[0]
         }
