@@ -45,7 +45,7 @@ outputs:
           var io=inputs.output
           io=io.replace(" /g","_")
           self[0].basename = io + '_quant.sf';
-          return newval
+          return self[0]
         }
 
 
