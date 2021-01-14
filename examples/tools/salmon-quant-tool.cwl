@@ -39,13 +39,13 @@ outputs:
   quants:
     type: File
     outputBinding:
-      glob: "*/quant.sf"
+      glob: */quant.sf
       outputEval: |
         ${
           var io=inputs.output
           io=io.replace(" /g","_")
           self[0].basename = io + '_quant.sf';
-          return self
+          return self[0]
         }
 
 
