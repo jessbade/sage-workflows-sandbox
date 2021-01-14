@@ -40,7 +40,10 @@ outputs:
     type: File
     outputBinding:
       glob: '*/quant.sf'
-
+      outputEval: |
+        ${
+          return self[0]
+        }
 
 
 
