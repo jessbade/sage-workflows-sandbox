@@ -39,7 +39,7 @@ outputs:
   quants:
     type: File
     outputBinding:
-      glob: */quant.sf
+      glob: '*/quant.sf'
       outputEval: |
         ${
           var io=inputs.output
